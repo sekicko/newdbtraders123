@@ -13,7 +13,7 @@ export interface AppIDConfig {
 export const DOMAIN_APP_IDS: Record<string, AppIDConfig> = {
     'new.dbtraders.com': {
         legacy_app_id: 70590,
-        new_app_id: '32R0yyuMgcxc7bhT7tOjJ',
+        new_app_id: '32R67nHoRqm9bR8lPcPEQ',
     },
     'newdbtraders.vercel.app': {
         legacy_app_id: 70590,
