@@ -15,6 +15,10 @@ export const DOMAIN_APP_IDS: Record<string, AppIDConfig> = {
         legacy_app_id: 70590,
         new_app_id: '32R0yyuMgcxc7bhT7tOjJ',
     },
+    'newdbtraders.vercel.app': {
+        legacy_app_id: 70590,
+        new_app_id: '32R67nHoRqm9bR8lPcPEQ',
+    },
     // Fallback for localhost and development
     'localhost': {
         legacy_app_id: 52960,
