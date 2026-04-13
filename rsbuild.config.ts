@@ -112,6 +112,11 @@ export default defineConfig({
                         exclude: /node_modules/,
                         use: 'raw-loader',
                     },
+                    // Handle ES modules in bot-skeleton (they use .js but have ES6 import/export)
+                    {
+                        test: /bot-skeleton.*\.js$/,
+                        type: 'javascript/esm',
+                    },
                     // CRITICAL: Handle Blockly's CommonJS requires properly
                     // This lets Blockly use require('react') at runtime
                     {
