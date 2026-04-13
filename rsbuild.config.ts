@@ -36,8 +36,8 @@ export default defineConfig({
             },
         },
         alias: {
-            react: path.resolve('./node_modules/react'),
-            'react-dom': path.resolve('./node_modules/react-dom'),
+            'react': 'react',
+            'react-dom': 'react-dom',
             '@/external': path.resolve(__dirname, './src/external'),
             '@/components': path.resolve(__dirname, './src/components'),
             '@/config': path.resolve(__dirname, './src/config'),
@@ -101,27 +101,12 @@ export default defineConfig({
     },
     tools: {
         rspack: {
-            plugins: [],
-            resolve: {
-                // Ensure CommonJS modules can be properly resolved
-                extensions: ['.ts', '.tsx', '.js', '.jsx', '.json'],
-            },
-            externals: {
-                // Don't externalize these - they should be bundled
-                react: false,
-                'react-dom': false,
-            },
             module: {
                 rules: [
                     {
                         test: /\.xml$/,
                         exclude: /node_modules/,
                         use: 'raw-loader',
-                    },
-                    // Handle CommonJS modules from blockly and others
-                    {
-                        test: /node_modules[\\/]blockly/,
-                        type: 'javascript/dynamic',
                     },
                 ],
             },
