@@ -4,7 +4,7 @@ import { observer } from 'mobx-react-lite';
 import Button from '@/components/shared_ui/button';
 import StaticUrl from '@/components/shared_ui/static-url';
 import { useStore } from '@/hooks/useStore';
-import { DerivLightGoogleDriveIcon } from '@deriv/quill-icons/Illustration';
+import { IllustrativeNetworkIcon } from '@deriv/quill-icons';
 import { Localize } from '@deriv-com/translations';
 import { useDevice } from '@deriv-com/ui';
 /* [AI] - Analytics event tracking removed - see migrate-docs/MONITORING_PACKAGES.md for re-implementation guide */
@@ -21,7 +21,7 @@ const GoogleDrive: React.FC = observer(() => {
     return (
         <div className='load-strategy__container' data-testid='dt_google_drive'>
             <div className='load-strategy__google-drive'>
-                <DerivLightGoogleDriveIcon
+                <IllustrativeNetworkIcon
                     className={classnames('load-strategy__google-drive-icon', {
                         'load-strategy__google-drive-icon--disabled': !is_authorised,
                     })}

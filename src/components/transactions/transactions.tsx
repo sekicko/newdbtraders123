@@ -9,7 +9,7 @@ import { TContractInfo } from '@/components/summary/summary-card.types';
 import { contract_stages } from '@/constants/contract-stage';
 import { transaction_elements } from '@/constants/transactions';
 import { useStore } from '@/hooks/useStore';
-import { DerivLightEmptyCardboardBoxIcon } from '@deriv/quill-icons/Illustration';
+import { IllustrativeListIcon } from '@deriv/quill-icons';
 import { Localize } from '@deriv-com/translations';
 import { useDevice } from '@deriv-com/ui';
 import ThemedScrollbars from '../shared_ui/themed-scrollbars';
@@ -182,7 +182,7 @@ const Transactions = observer(({ is_drawer_open }: TTransactions) => {
                                     <div className='transactions-empty-box'>
                                         <div className='transactions-empty'>
                                             <div className='transactions-empty__icon-box'>
-                                                <DerivLightEmptyCardboardBoxIcon
+                                                <IllustrativeListIcon
                                                     height='64px'
                                                     width='64px'
                                                     className='transactions-empty__icon icon-general-fill-g-path'

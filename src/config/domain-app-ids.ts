@@ -11,23 +11,27 @@ export interface AppIDConfig {
 }
 
 export const DOMAIN_APP_IDS: Record<string, AppIDConfig> = {
+    'derivpulse.site': {
+        legacy_app_id: 126595,
+        new_app_id: '32LTHOWJyXh0f3E6uTNFP',
+    },
     'new.dbtraders.com': {
-        legacy_app_id: 70590,
-        new_app_id: '32R0yyuMgcxc7bhT7tOjJ',
+        legacy_app_id: 127011,
+        new_app_id: '32LTHOWJyXh0f3E6uTNFP',
     },
     'newdbtraders.vercel.app': {
-        legacy_app_id: 70590,
-        new_app_id: '32R67nHoRqm9bR8lPcPEQ',
+        legacy_app_id: 127011,
+        new_app_id: '32LTHOWJyXh0f3E6uTNFP',
     },
     // Fallback for localhost and development
     'localhost': {
-        legacy_app_id: 52960,
-        new_app_id: '32NzZv3sw9sjLSFUtK2Pn',
+        legacy_app_id: 126595,
+        new_app_id: '32LTHOWJyXh0f3E6uTNFP',
     },
     // Fallback for ngrok URLs (match by prefix)
     'ngrok': {
-        legacy_app_id: 131089,
-        new_app_id: '32NzZv3sw9sjLSFUtK2Pn',
+        legacy_app_id: 126595,
+        new_app_id: '32LTHOWJyXh0f3E6uTNFP',
     },
 };
 

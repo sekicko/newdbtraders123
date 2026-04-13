@@ -3,7 +3,7 @@ import { observer } from 'mobx-react-lite';
 import Text from '@/components/shared_ui/text';
 import { contract_stages } from '@/constants/contract-stage';
 import { useStore } from '@/hooks/useStore';
-import { DerivLightEmptyCardboardBoxIcon } from '@deriv/quill-icons/Illustration';
+import { IllustrativeListIcon } from '@deriv/quill-icons';
 import { Localize } from '@deriv-com/translations';
 import { useDevice } from '@deriv-com/ui';
 import DataList from '../data-list';
@@ -58,7 +58,7 @@ const Journal = observer(() => {
                             <JournalLoader is_mobile={!isDesktop} />
                         ) : (
                             <div className='journal-empty'>
-                                <DerivLightEmptyCardboardBoxIcon
+                                <IllustrativeListIcon
                                     height='64px'
                                     width='64px'
                                     className='journal-empty__icon icon-general-fill-g-path'

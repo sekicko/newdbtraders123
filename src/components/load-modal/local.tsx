@@ -3,8 +3,8 @@ import classNames from 'classnames';
 import { observer } from 'mobx-react-lite';
 import Button from '@/components/shared_ui/button';
 import { useStore } from '@/hooks/useStore';
-import { DerivLightLocalDeviceIcon, DerivLightMyComputerIcon } from '@deriv/quill-icons/Illustration';
-import { LegacyClose1pxIcon, LegacyInfo1pxIcon } from '@deriv/quill-icons/Legacy';
+import { IllustrativeComputerIcon, IllustrativeNetworkIcon } from '@deriv/quill-icons';
+import { LegacyClose1pxIcon, LegacyInfo1pxIcon } from '@deriv/quill-icons';
 import { Localize, localize } from '@deriv-com/translations';
 import { useDevice } from '@deriv-com/ui';
 import { botNotification } from '../bot-notification/bot-notification';
@@ -105,10 +105,10 @@ const LocalComponent = observer(() => {
                     }}
                 >
                     {!isDesktop ? (
-                        <DerivLightLocalDeviceIcon height='96px' width='96px' className='load-strategy__local-icon' />
+                        <IllustrativeComputerIcon height='96px' width='96px' className='load-strategy__local-icon' />
                     ) : (
                         <React.Fragment>
-                            <DerivLightMyComputerIcon
+                            <IllustrativeComputerIcon
                                 height='128px'
                                 width='128px'
                                 className='load-strategy__local-icon'

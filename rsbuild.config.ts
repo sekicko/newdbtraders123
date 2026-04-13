@@ -73,10 +73,17 @@ export default defineConfig({
     },
     server: {
         port: 8443,
+        host: '0.0.0.0',
         compress: true,
     },
     dev: {
-        hmr: true,
+        hmr: process.env.CODESPACES
+            ? {
+                  protocol: 'wss',
+                  hostname: process.env.CODESPACE_NAME ? `${process.env.CODESPACE_NAME}-8443.app.github.dev` : 'localhost',
+                  port: 443,
+              }
+            : true,
     },
     performance: {
         // Configure Rsbuild's native bundle analyzer
