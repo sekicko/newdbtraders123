@@ -103,6 +103,7 @@ export default defineConfig({
         rspack: {
             plugins: [],
             resolve: {},
+            externalsPreferBuiltins: false,
             module: {
                 rules: [
                     {
