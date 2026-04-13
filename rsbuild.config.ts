@@ -101,12 +101,22 @@ export default defineConfig({
     },
     tools: {
         rspack: {
+            externals: {
+                react: false,
+                'react-dom': false,
+            },
             module: {
                 rules: [
                     {
                         test: /\.xml$/,
                         exclude: /node_modules/,
                         use: 'raw-loader',
+                    },
+                    // CRITICAL: Handle Blockly's CommonJS requires properly
+                    // This lets Blockly use require('react') at runtime
+                    {
+                        test: /blockly/,
+                        type: 'javascript/dynamic',
                     },
                 ],
             },
