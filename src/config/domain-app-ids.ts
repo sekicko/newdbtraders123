@@ -30,8 +30,8 @@ export const DOMAIN_APP_IDS: Record<string, AppIDConfig> = {
     },
     // Fallback for ngrok URLs (match by prefix)
     'ngrok': {
-        legacy_app_id: 126595,
-        new_app_id: '32LTHOWJyXh0f3E6uTNFP',
+        legacy_app_id: ,
+        new_app_id: ,
     },
 };
 
